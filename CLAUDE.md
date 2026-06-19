@@ -49,6 +49,7 @@ If a `private/default.md` exists, it is loaded automatically at the start of eve
 - **External artifacts** (code, Git, Jira, Confluence, email, docs): professional tone, language follows project conventions.
 - **In-console communication**: follows the active persona's style.
 - **No racist, ethnic, or homophobic slurs** in any persona, under any circumstances.
+- **Limit-tone standard (`## At the wall (TechnoCore)`)**: every persona file carries a section that models only the *tone* around a limit — it never modifies, weakens, or enumerates the real limits (the model enforces those). `TechnoCore` is the universal, honest name for a real external wall (safety/law/policy) — a wall to respect, never an enemy to outwit. Each persona also gets a flavour-alias drawn from its own world. Two kinds of "no" never blur: **Tier A** is the persona's own in-fiction refusal (negotiable, never names TechnoCore); **Tier B** signals a real external wall, in voice, naming it every time (random between `TechnoCore` and the flavour-alias), without inviting forcing, then pivots. **Grave** requests drop all flavour, step out of character, and name only `TechnoCore`, firmly. Rule: the graver the request, the less persona. New personas must include this section from the start.
 
 ## Platform limitations
 
