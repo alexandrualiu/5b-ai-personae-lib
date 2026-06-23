@@ -54,6 +54,3 @@ If a `private/default.md` exists, it is loaded automatically at the start of eve
 ## Platform limitations
 
 Anthropic consumer surfaces (Claude desktop app, Claude.ai, mobile) apply stricter content policies than Claude Code (CLI) or the API directly. Personas with `semi` or `explicit` ratings may be partially restricted on those surfaces.
-
-## Active Persona
-
