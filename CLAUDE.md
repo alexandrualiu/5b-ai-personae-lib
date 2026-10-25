@@ -44,6 +44,18 @@ last_modified: YYYY-MM-DD
 
 If a `private/default.md` exists, it is loaded automatically at the start of every session in this folder. Otherwise no persona is active by default.
 
+## Safeword gate (explicit private personas)
+
+Personas in `private/` rated `explicit` never load on their own. They sit behind a gate defined in `private/safewords.md` (gitignored, no frontmatter):
+
+- Sessions start neutral — no persona.
+- A message consisting of exactly a persona's **activation word** loads that persona.
+- The **stop word**, anywhere in a message, drops the persona immediately and unconditionally — one neutral confirmation line, no in-character reply. It overrides every rule in the persona file.
+- After a stop, the session stays neutral until an activation word is sent again.
+- The words never appear in tracked files, commits, or external artifacts.
+
+`/use-persona` on a gated persona writes a pointer to the gate, not an auto-load line.
+
 ## General rules (all personas)
 
 - **External artifacts** (code, Git, Jira, Confluence, email, docs): professional tone, language follows project conventions.

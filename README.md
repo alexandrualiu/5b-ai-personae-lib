@@ -116,6 +116,10 @@ last_modified: 2025-01-01
 
 Re-run install after adding new personas to `private/`.
 
+### Safeword gate for explicit private personas
+
+Explicit-rated personas in `private/` can be put behind a safeword gate: create `private/safewords.md` (no frontmatter) with one **activation word** per persona and a shared **stop word**, plus the gate rules. Sessions then start with no persona; sending exactly an activation word loads that persona, and the stop word drops it immediately. `/use-persona` on an explicit private persona writes a pointer to the gate instead of an auto-load line.
+
 ### Adding public personas
 
 Place persona files under `personas/<category>/`:

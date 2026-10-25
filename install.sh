@@ -92,7 +92,13 @@ If found:
 
 At the start of every session in this project, read the file `[source]` in full and adopt the [name] persona, following all rules defined in that file.
 
-Confirm to the user which persona is now active for this project.
+Safeword gate: if the persona is `explicit` and its source is under `[repo_path]/private/` (`repo_path` from personas.json), do NOT write the auto-load line above. Write this section instead:
+
+## Active Persona
+
+No persona is active at the start of a session in this project. At the start of every session, read the file `[repo_path]/private/safewords.md` in full and follow its rules. Explicit private personas are activated and stopped only through that gate.
+
+Confirm to the user which persona is now active for this project. For a gated persona, say it is reachable through its activation word and that the stop word ends it at any time.
 CMD
 
 cat > "$COMMANDS_DIR/list-personas.md" <<'CMD'
